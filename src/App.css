@@ -32,7 +32,30 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
+  }
+}
+
+.wizard-container {
+  text-align: 'center';
+  margin-bottom: '50px';
+  margin-top: '10px'
+}
+
+.wizard-image {
+  width: '100%';
+  max-width: '742px';
+  height: '611';
+  aspect-ratio: 'auto 742/611';
+}
+
+@media (max-width: 768px) {
+  .wizard-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
   }
 }
